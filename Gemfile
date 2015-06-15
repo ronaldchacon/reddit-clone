@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
+gem 'devise'
+gem 'figaro'
 
 group :development, :test do
   gem 'byebug'
@@ -18,10 +20,14 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :development do
   gem 'rails_layout'
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'pry-rails'
 end
 
 group :test do
