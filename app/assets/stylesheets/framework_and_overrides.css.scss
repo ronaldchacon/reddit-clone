@@ -2,45 +2,59 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// make all images responsive by default
+// ==============================
+//    GENERAL CSS
+// ==============================
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+// Color Palette
+$primary-color-dark:  #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #9E9E9E;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
 img {
   @extend .img-responsive;
   margin: 0 auto;
-  }
-// override for the 'Home' navigation link
-.navbar-brand {
-  font-size: inherit;
-  }
+}
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
-.column {
-  @extend .col-md-6;
-  @extend .text-center;
-  }
-.form {
-  @extend .col-md-6;
-  }
-.form-centered {
-  @extend .col-md-6;
-  @extend .text-center;
-  }
-.submit {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .btn-lg;
-  }
-// apply styles to HTML elements
-// to make views framework-neutral
 main {
   @extend .container;
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
-  }
+}
+
 section {
   @extend .row;
   margin-top: 20px;
+}
+
+// ==============================
+//    NAVIGATION CSS
+// ==============================
+
+.navbar-blue-grey {
+  @extend .navbar;
+  background-color: $primary-color-dark;
+}
+
+span.icon-bar {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  font-size: inherit;
+  font-family: 'Roboto', sans-serif;
+  color: $primary-color-text;
+  &:hover {
+    color: $primary-color-text;
   }
+}
