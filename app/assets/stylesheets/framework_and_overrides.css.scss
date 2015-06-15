@@ -19,22 +19,15 @@ $primary-text-color:   #212121;
 $secondary-text-color: #727272;
 $divider-color:        #B6B6B6;
 
+body {
+  padding-top: 51px;
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+
 img {
   @extend .img-responsive;
   margin: 0 auto;
-}
-
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
-}
-
-section {
-  @extend .row;
-  margin-top: 20px;
 }
 
 // ==============================
