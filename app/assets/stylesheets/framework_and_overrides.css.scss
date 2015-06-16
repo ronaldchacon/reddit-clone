@@ -23,6 +23,7 @@ body {
   padding-top: 51px;
   padding-bottom: 80px;
   background-color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -50,4 +51,12 @@ span.icon-bar {
   &:hover {
     color: $primary-color-text;
   }
+}
+
+// ==============================
+//        DEVISE CSS
+// ==============================
+
+#error_explanation ul li {
+  color: red;
 }
