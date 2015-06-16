@@ -13,7 +13,6 @@
 }
 
 .panel-signup > .panel-footer {
-  color: #fff;
   background-color: #fff;
   border-color: #fff;
   border-top: none;
@@ -23,6 +22,14 @@
 //          USER SIGNUP
 // ==============================
 .user-signup-wrapper {
+  background-color: #fff;
+  margin-top: 51px;
+}
+
+// ==============================
+//          USER EDIT
+// ==============================
+.user-edit-wrapper {
   background-color: #fff;
   margin-top: 51px;
 }

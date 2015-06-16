@@ -53,6 +53,31 @@ span.icon-bar {
   }
 }
 
+a.dropdown-toggle {
+  color: $primary-color-text;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: $accent-color;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+
+.dropdown-menu {
+  .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: $divider-color;
+  }
+}
+
+
+
 // ==============================
 //        DEVISE CSS
 // ==============================
