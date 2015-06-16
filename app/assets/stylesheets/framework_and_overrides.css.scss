@@ -38,6 +38,10 @@ img {
 .navbar-blue-grey {
   @extend .navbar;
   background-color: $primary-color-dark;
+  a {
+    color: $primary-color-text;
+    text-decoration: none;
+  }
 }
 
 span.icon-bar {
@@ -47,14 +51,6 @@ span.icon-bar {
 .navbar-brand {
   font-size: inherit;
   font-family: 'Roboto', sans-serif;
-  color: $primary-color-text;
-  &:hover {
-    color: $primary-color-text;
-  }
-}
-
-a.dropdown-toggle {
-  color: $primary-color-text;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -74,14 +70,4 @@ a.dropdown-toggle {
     overflow: hidden;
     background-color: $divider-color;
   }
-}
-
-
-
-// ==============================
-//        DEVISE CSS
-// ==============================
-
-#error_explanation ul li {
-  color: red;
 }
