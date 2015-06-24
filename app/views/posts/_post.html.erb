@@ -1,0 +1,15 @@
+<li id="<%= post.id %>">
+  <span class="content">
+    <%= link_to post.title, post.url %>
+  </span>
+  <span class="timestamp">Submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.username %></span>
+  <span class='comments'>
+    <%= link_to '10 Comments', '#' %> |
+    <%= link_to '#', class: 'upvote' do %>
+      <span class='glyphicon glyphicon-thumbs-up'></span> Upvote
+    <% end %> |
+    <%= link_to '#', class: 'downvote' do %>
+      <span class='glyphicon glyphicon-thumbs-down'></span> Downvote
+    <% end %>
+  </span>
+</li>

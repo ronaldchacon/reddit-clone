@@ -1,0 +1,59 @@
+// ==============================
+//      VISITOR NEW
+// ==============================
+.main-wrapper {
+  margin-top: 50px;
+}
+
+// ==============================
+//      VISITOR CREATE POST
+// ==============================
+.create-post-panel {
+  @extend .panel-default;
+  @include shadow(1);
+}
+
+// ==============================
+//      VISITOR POSTS
+// ==============================
+.posts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $accent-color;
+    .content {
+      display: block;
+      a {
+        text-decoration: none;
+      }
+    }
+    .timestamp {
+      margin-top: 5px;
+      padding-top: 0;
+      @extend .text-muted;
+      font-size: 11px;
+    }
+    .comments {
+      display: block;
+      font-size: 12px;
+      a {
+        @extend .text-muted;
+        text-decoration: none;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+      a.upvote {
+        &:hover {
+          color: blue;
+        }
+      }
+      a.downvote {
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
