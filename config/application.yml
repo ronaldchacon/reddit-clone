@@ -13,5 +13,8 @@
 development:
   domain_name: 'example.com'
 
+test:
+  domain_name: 'example.com'
+
 production:
   domain_name: 'ronaldchacon.com'
