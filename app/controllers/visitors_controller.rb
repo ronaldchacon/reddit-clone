@@ -1,5 +1,7 @@
 class VisitorsController < ApplicationController
   def new
-    @post = current_user.posts.build
+    if user_signed_in?
+      @post = current_user.posts.build
+    end
   end
 end
