@@ -4,7 +4,7 @@
   </span>
   <span class="timestamp">Submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.username %></span>
   <span class='comments'>
-    <%= link_to '10 Comments', '#' %> |
+    <%= link_to pluralize(post.comments.count, 'comment'), post_path(post) %> |
     <%= link_to '#', class: 'upvote' do %>
       <span class='glyphicon glyphicon-thumbs-up'></span> Upvote
     <% end %> |

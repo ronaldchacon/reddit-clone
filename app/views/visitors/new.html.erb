@@ -1,20 +1,20 @@
 <section class="main-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Posts</h2>
-          <%= render 'shared/posts' %>
-        </div>
-        <% if user_signed_in? %>
-          <div class="col-md-4">
-            <div class="panel create-post-panel">
-              <div class="panel-body">
-                <h2>Create new post</h2>
-                <%= render 'shared/post_form' %>
-              </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Posts</h2>
+        <%= render 'shared/posts' %>
+      </div>
+      <% if user_signed_in? %>
+        <div class="col-md-4">
+          <div class="panel create-post-panel">
+            <div class="panel-body">
+              <h2>Create new post</h2>
+              <%= render 'shared/post_form' %>
             </div>
           </div>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     </div>
+  </div>
 </section>

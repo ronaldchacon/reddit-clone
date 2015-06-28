@@ -1,3 +1,47 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// ==============================
+//      POSTS - SHOW
+// ==============================
+.post-wrapper {
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.post {
+  .content {
+    display: block;
+    a {
+      text-decoration: none;
+    }
+  }
+  .timestamp {
+    margin-top: 5px;
+    padding-top: 0;
+    @extend .text-muted;
+    font-size: 11px;
+  }
+  .comments {
+    display: block;
+    font-size: 12px;
+    a {
+      @extend .text-muted;
+      text-decoration: none;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    a.upvote {
+      &:hover {
+        color: blue;
+      }
+    }
+    a.downvote {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+.comments-wrapper {
+  background-color: #fff;
+}
