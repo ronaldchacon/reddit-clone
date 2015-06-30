@@ -5,11 +5,11 @@
   <span class="timestamp">Submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.username %></span>
   <span class='comments'>
     <%= link_to pluralize(post.comments.count, 'comment'), post_path(post) %> |
-    <%= link_to '#', class: 'upvote' do %>
-      <span class='glyphicon glyphicon-thumbs-up'></span> Upvote
+    <%= link_to upvote_post_path(post), method: :put, class: 'upvote' do %>
+      <span class='glyphicon glyphicon-thumbs-up'></span> Upvote <%= post.get_upvotes.size %>
     <% end %> |
-    <%= link_to '#', class: 'downvote' do %>
-      <span class='glyphicon glyphicon-thumbs-down'></span> Downvote
+    <%= link_to downvote_post_path(post), method: :put, class: 'downvote' do %>
+      <span class='glyphicon glyphicon-thumbs-down'></span> Downvote <%= post.get_downvotes.size %>
     <% end %>
   </span>
 </li>

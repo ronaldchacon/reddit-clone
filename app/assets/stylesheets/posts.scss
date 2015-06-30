@@ -3,7 +3,7 @@
 // ==============================
 .post-wrapper {
   background-color: #fff;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .post {
@@ -48,6 +48,7 @@
 
 .comments-wrapper {
   background-color: #fff;
+  padding-top: 20px;
 }
 
 .comment-count {
@@ -60,6 +61,7 @@
   .comment-body {
     display: block;
     margin-bottom: 2px;
+    font-size: 16px;
   }
   .timestamp {
     margin-top: 5px;
