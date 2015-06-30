@@ -1,1 +1,13 @@
-<%= comment.comment %>
+<div id="<%= comment.id %>" class="comment">
+  <span class="comment-body"><%= comment.body %></span>
+  <span class="timestamp">Submitted <%= time_ago_in_words(comment.created_at) %> ago by <%= comment.user.username if !comment.user.nil? %></span>
+  <span class='comment-voting'>
+    <%= link_to '#', class: 'upvote' do %>
+      <span class='glyphicon glyphicon-thumbs-up'></span> Upvote
+    <% end %> |
+    <%= link_to '#', class: 'downvote' do %>
+      <span class='glyphicon glyphicon-thumbs-down'></span> Downvote
+    <% end %>
+  </span>
+  <hr/>
+</div>
