@@ -8,6 +8,11 @@
     <%= link_to downvote_post_comment_path(@post, comment), method: :put, class: 'downvote' do %>
       <span class='glyphicon glyphicon-thumbs-down'></span> Downvote <%= comment.get_downvotes.size %>
     <% end %>
+    <% if user_signed_in? %>
+      <% if current_user.id == comment.user_id %>
+        | <%= link_to 'Delete Comment', post_comment_path(@post, comment), method: :delete, data: {confirm: 'Are you sure you want to delete this comment?'} %>
+      <% end %>
+    <% end %>
   </span>
   <hr/>
 </div>
