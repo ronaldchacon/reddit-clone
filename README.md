@@ -1,1 +1,1 @@
-# Reddit Clone
+# LNKR a Reddit/Hacker News clone
