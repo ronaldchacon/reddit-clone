@@ -18,6 +18,12 @@ class PostsController < ApplicationController
     @comments = @post.comments.paginate(page: params[:page])
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to :back
+  end
+
   def upvote
     @post = Post.find(params[:id])
     @post.upvote_by current_user
