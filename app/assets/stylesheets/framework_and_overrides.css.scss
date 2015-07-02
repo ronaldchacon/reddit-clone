@@ -48,6 +48,12 @@ main {
 footer {
   height: 60px;
   background-color: #f5f5f5;
+  border-top: 2px solid #f5f5f5;
+  p {
+    @extend .text-muted;
+    @extend .text-center;
+    margin-top: 20px;
+  }
 }
 
 // ==============================
