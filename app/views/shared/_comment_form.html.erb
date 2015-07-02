@@ -1,8 +1,7 @@
 <%= form_for [@post, @comment] do |f| -%>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="form-group">
-    <%= f.label :body %>
-    <%= f.text_field :body, class: 'form-control' %>
+    <%= f.text_field :body, class: 'form-control', placeholder: 'Submit a new comment' %>
   </div>
   <%= f.submit class: 'btn btn-primary' %>
 <% end -%>
