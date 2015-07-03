@@ -7,8 +7,8 @@ class PostsController < ApplicationController
       redirect_to root_url
       flash[:notice] = "Successfully created new post"
     else
-      redirect_to root_url
-      flash[:error] = "Post was not successfully created. Please try again."
+      @posts = []
+      render 'visitors/new'
     end
   end
 

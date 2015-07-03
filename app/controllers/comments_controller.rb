@@ -15,8 +15,8 @@ class CommentsController < ApplicationController
         format.js
       else
         format.html {
-          redirect_to post_path(@post)
-          flash[:error] = "Comment was not saved. Please try again."
+          @comments = []
+          render 'posts/show'
         }
         format.js
       end
