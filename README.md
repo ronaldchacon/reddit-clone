@@ -7,8 +7,9 @@ Technology Used
 - JavaScript & jQuery
 - Twitter Bootstrap & SASS
 
-User Story
+User Stories
 ---
+- A user can create, update and delete their account
 - A user can create. update, and destroy posts
 - A user can comment on a post
 - A user can delete a comment from a post
