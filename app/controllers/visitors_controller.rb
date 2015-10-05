@@ -1,9 +1,6 @@
 class VisitorsController < ApplicationController
-
   def new
-    if user_signed_in?
-      @post = current_user.posts.build
-    end
+    @post = current_user.posts.build if user_signed_in?
     @posts = Post.paginate(page: params[:page])
   end
 end

@@ -16,6 +16,7 @@ gem 'figaro'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'faker'
 
 group :development, :test do
   gem 'byebug'
@@ -23,7 +24,6 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'faker'
 end
 
 group :development do

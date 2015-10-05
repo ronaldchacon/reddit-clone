@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
 
   validates :title, presence: true
   URL_FORMAT = /\A(https?:\/\/)([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?\z/
-  validates :url, presence: true, format: {with: URL_FORMAT, message: "Invalid URL"}
+  validates :url, presence: true, format: {with: URL_FORMAT, message: 'Invalid URL'}
 
-  default_scope -> { order(created_at: :desc) }
+  default_scope -> { order(cached_votes_score: :desc) }
 end
