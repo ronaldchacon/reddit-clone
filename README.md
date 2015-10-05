@@ -1,5 +1,5 @@
 # LNKR (Reddit/Hacker News clone)
-A project based on the functionality of Reddit and Hacker News. The application incorporated the use of caching to order and display posts to all users.
+A project based on the functionality of Reddit and Hacker News. The application incorporated the use of caching to order and display posts based on vote score.
 
 Technology Used
 ---
